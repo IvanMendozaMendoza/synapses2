@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat brightness-50"
           style={{
-            backgroundImage: `url('/assets/synapses/images/analisis-de-los-datos.jpg')`,
+            backgroundImage: `url('/assets/synapses/images/analisis-de-los-datos.webp'), url('/assets/synapses/images/analisis-de-los-datos-optimized.jpg')`,
           }}
         ></div>
         {/* Dark overlay for better text readability */}
