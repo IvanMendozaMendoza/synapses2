@@ -5,11 +5,10 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
-const Header = () => {
+const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Inicio", href: "#inicio" },
     { label: "Servicios", href: "#servicios" },
     { label: "Programas", href: "#programas" },
     { label: "Convocatorias", href: "#convocatorias" },
@@ -18,7 +17,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white backdrop-blur-md shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
@@ -26,9 +25,9 @@ const Header = () => {
             <Image
               src="/assets/synapses/logotipo/logo_blue.png"
               alt="Logo Secretaría de Desarrollo Económico"
-              className="w-20 h-20 object-contain"
-              width={40}
-              height={40}
+              className="w-24 h-24 object-contain"
+              width={80}
+              height={80}
               priority
               unoptimized={false}
             />
@@ -36,15 +35,15 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+            <div className="ml-10 flex items-center space-x-1">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200 relative group"
+                  className="text-gray-600 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-all duration-200 relative group"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
@@ -82,10 +81,11 @@ const Header = () => {
                 <a
                   key={item.label}
                   href={item.href}
-                  className="text-gray-700 hover:text-primary block px-3 py-2 text-base font-medium transition-colors duration-200"
+                  className="text-gray-600 hover:text-blue-700 block px-3 py-2 text-xm font-medium transition-all duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.label}
+                  <hr className="border-gray-200 mt-2" />
                 </a>
               ))}
               <div className="pt-4">
@@ -101,4 +101,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
