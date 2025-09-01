@@ -50,7 +50,7 @@ const HeroSection = () => {
               size="lg"
               className="bg-blue-500/50 backdrop-blur-sm text-primary hover:bg-blue-500/60 px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-102 border border-white/20"
             >
-              Explorar Oportunidades
+              Explorar Métricas
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
@@ -59,7 +59,7 @@ const HeroSection = () => {
               className="border-white text-white hover:bg-black/20 hover:text-primary px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-102"
             >
               <Play className="mr-2 h-5 w-5" />
-              Ver Video Institucional
+              Ver como funciona
             </Button>
           </div>
 
