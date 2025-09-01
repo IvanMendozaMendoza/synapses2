@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,26 +14,24 @@ const Header = () => {
     { label: "Programas", href: "#programas" },
     { label: "Convocatorias", href: "#convocatorias" },
     { label: "Noticias", href: "#noticias" },
-    { label: "Contacto", href: "#contacto" }
+    { label: "Contacto", href: "#contacto" },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="flex-shrink-0">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-hero rounded-xl flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">M</span>
-                </div>
-                <div>
-                  <div className="text-lg font-bold text-gray-900">Secretaría de</div>
-                  <div className="text-sm font-medium text-primary">Desarrollo Económico</div>
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/assets/synapses/logotipo/logo_blue.png"
+              alt="Logo Secretaría de Desarrollo Económico"
+              className="w-20 h-20 object-contain"
+              width={40}
+              height={40}
+              priority
+              unoptimized={false}
+            />
           </div>
 
           {/* Desktop Navigation */}
@@ -60,9 +59,9 @@ const Header = () => {
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
-            <Button 
-              variant="ghost" 
-              size="sm" 
+            <Button
+              variant="ghost"
+              size="sm"
               className="text-gray-700"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >

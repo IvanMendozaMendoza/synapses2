@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const NotFound = () => (
   <main className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground px-4">
     <div className="flex flex-col items-center gap-6">
@@ -9,12 +11,12 @@ const NotFound = () => (
         Lo sentimos, la página que buscas no existe o fue movida.<br />
         Por favor, verifica la URL o regresa al inicio.
       </p>
-      <a
+      <Link
         href="/"
         className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium shadow-glow hover:bg-primary/90 transition-colors"
       >
         Volver al inicio
-      </a>
+      </Link>
     </div>
   </main>
 );

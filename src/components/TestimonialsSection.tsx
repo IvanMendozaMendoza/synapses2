@@ -1,3 +1,5 @@
+"use client";
+
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star, Quote } from "lucide-react";
@@ -93,7 +95,7 @@ const TestimonialsSection = () => {
                 <div className="relative">
                   <Quote className="absolute -top-2 -left-2 h-6 w-6 text-primary/20" />
                   <p className="text-gray-700 leading-relaxed pl-4">
-                    "{testimonial.content}"
+                    &ldquo;{testimonial.content}&rdquo;
                   </p>
                 </div>
               </CardContent>

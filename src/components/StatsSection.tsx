@@ -1,4 +1,4 @@
-import { TrendingUp, TrendingDown, Users, MapPin, Factory, Plane } from "lucide-react";
+import { TrendingUp, TrendingDown, Users, Factory, Plane } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
