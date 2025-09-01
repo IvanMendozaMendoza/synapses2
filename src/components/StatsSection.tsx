@@ -1,50 +1,47 @@
-import { TrendingUp, TrendingDown, Users, Factory, Plane } from "lucide-react";
+import { TrendingUp, TrendingDown, Users, Database, BarChart3 } from "lucide-react";
 
 const StatsSection = () => {
   const stats = [
     {
-      label: "PIB Estatal Morelos",
-      value: "428.9B",
-      suffix: "MXN",
+      label: "Indicadores Disponibles",
+      value: "50+",
+      icon: BarChart3,
+      trend: "up",
+      color: "text-success",
+      description: "Métricas económicas activas"
+    },
+    {
+      label: "Cobertura Temporal",
+      value: "15+",
+      suffix: "años",
       icon: TrendingUp,
-      trend: "up",
+      trend: "up", 
       color: "text-success",
-      description: "Producto Interno Bruto 2023"
+      description: "Series históricas disponibles"
     },
     {
-      label: "Tasa de Desempleo",
-      value: "2.8%",
-      icon: TrendingDown,
-      trend: "down", 
-      color: "text-success",
-      description: "Trimestre IV 2023"
-    },
-    {
-      label: "Población Total",
-      value: "2.04M",
-      suffix: "hab",
-      icon: Users,
-      trend: "up",
-      color: "text-primary",
-      description: "Censo INEGI 2023"
-    },
-    {
-      label: "Actividad Turística",
-      value: "+8.2B",
-      suffix: "MXN",
-      icon: Plane,
-      trend: "up",
-      color: "text-accent",
-      description: "Derrama económica anual"
-    },
-    {
-      label: "Actividad Industrial",
-      value: "34.5%",
-      suffix: "PIB",
-      icon: Factory,
+      label: "Fuentes de Datos",
+      value: "8",
+      icon: Database,
       trend: "stable",
       color: "text-primary",
-      description: "Participación en PIB estatal"
+      description: "Instituciones oficiales"
+    },
+    {
+      label: "Actualización",
+      value: "24/7",
+      icon: TrendingDown,
+      trend: "up",
+      color: "text-accent",
+      description: "Monitoreo en tiempo real"
+    },
+    {
+      label: "Precisión",
+      value: "99.9%",
+      icon: Users,
+      trend: "stable",
+      color: "text-primary",
+      description: "Datos verificados oficialmente"
     }
   ];
 

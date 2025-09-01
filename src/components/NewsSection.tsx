@@ -1,20 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight, TrendingUp } from "lucide-react";
+import { Calendar, ArrowRight, TrendingUp, BarChart3 } from "lucide-react";
 
 const NewsSection = () => {
   const news = [
     {
-      category: "ECONOMÍA MORELOS",
-      title: "Morelos registra crecimiento del 4.2% en PIB estatal durante 2023",
-      description: "El estado de Morelos muestra una recuperación sólida en sectores como turismo, industria automotriz y servicios, posicionándose como uno de los estados con mayor dinamismo económico.",
+      category: "NUEVO DATASET",
+      title: "Actualización de indicadores económicos Q4 2023 disponible",
+      description: "Nuevos datos del INEGI sobre PIB, empleo y actividad económica de Morelos ya están disponibles en nuestra plataforma con análisis comparativo y visualizaciones interactivas.",
       date: "15 de Enero, 2024",
-      readTime: "5 min lectura",
+      readTime: "3 min lectura",
       image: "bg-gradient-warm"
     },
     {
-      category: "DESARROLLO INDUSTRIAL", 
-      title: "Nueva zona industrial en Cuautla generará 2,500 empleos directos",
-      description: "La inversión de empresas nacionales e internacionales en el corredor industrial Cuautla-Yautepec fortalece la competitividad del estado y diversifica su economía.",
+      category: "ANÁLISIS ESTADÍSTICO", 
+      title: "Tendencias económicas de Morelos: Análisis de series temporales",
+      description: "Nuestro equipo de análisis presenta un estudio detallado sobre las tendencias económicas del estado, incluyendo patrones estacionales y proyecciones para 2024.",
       date: "12 de Enero, 2024",
       readTime: "7 min lectura",
       image: "bg-gradient-primary"
@@ -26,10 +26,10 @@ const NewsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-foreground mb-4">
-            NOTICIAS
+            ACTUALIZACIONES DE DATOS
           </h2>
           <p className="text-lg text-muted-foreground">
-            Mantente actualizado con las últimas noticias económicas del Estado de Morelos
+            Mantente informado sobre nuevos datasets, análisis estadísticos y mejoras metodológicas
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const NewsSection = () => {
               <div className={`h-48 ${article.image} flex items-center justify-center relative`}>
                 <div className="absolute inset-0 bg-black/20"></div>
                 <div className="relative z-10 text-center text-white">
-                  <TrendingUp className="h-12 w-12 mx-auto mb-2 opacity-80" />
+                  <BarChart3 className="h-12 w-12 mx-auto mb-2 opacity-80" />
                   <span className="text-sm font-medium px-3 py-1 bg-white/20 rounded-full">
                     {article.category}
                   </span>
@@ -68,7 +68,7 @@ const NewsSection = () => {
                 </p>
 
                 <Button variant="economic" className="group">
-                  Leer más
+                  Ver datos
                   <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>

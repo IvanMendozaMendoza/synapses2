@@ -1,50 +1,50 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { 
-  Building2, 
-  Users, 
+  BarChart3, 
   TrendingUp, 
-  Lightbulb, 
-  Target, 
-  Network,
+  Database, 
+  FileText, 
+  PieChart, 
+  Users, 
   ArrowRight
 } from "lucide-react";
 
 const services = [
   {
-    icon: Building2,
-    title: "Desarrollo Empresarial",
-    description: "Apoyo integral para la creación y crecimiento de empresas en Morelos",
-    features: ["Incubación de negocios", "Consultoría especializada", "Acceso a financiamiento"]
-  },
-  {
-    icon: Users,
-    title: "Capacitación Laboral",
-    description: "Programas de formación profesional para impulsar la empleabilidad",
-    features: ["Cursos técnicos", "Certificaciones", "Vinculación laboral"]
+    icon: BarChart3,
+    title: "Indicadores Económicos",
+    description: "Métricas cuantitativas del PIB, empleo y actividad económica de Morelos",
+    features: ["Datos del INEGI", "Series temporales", "Análisis comparativo"]
   },
   {
     icon: TrendingUp,
-    title: "Inversión y Comercio",
-    description: "Facilitamos la atracción de inversiones y el comercio internacional",
-    features: ["Promoción de Morelos", "Enlaces comerciales", "Apoyo logístico"]
+    title: "Análisis de Tendencias",
+    description: "Identificación de patrones y proyecciones económicas del estado",
+    features: ["Predicciones estadísticas", "Análisis de ciclos", "Reportes trimestrales"]
   },
   {
-    icon: Lightbulb,
-    title: "Innovación Tecnológica",
-    description: "Impulsamos la transformación digital y la innovación empresarial",
-    features: ["Centros de innovación", "Transferencia tecnológica", "Ecosistema startup"]
+    icon: Database,
+    title: "Base de Datos Económica",
+    description: "Acceso a información estadística confiable y actualizada",
+    features: ["Datos oficiales", "Actualización automática", "API de acceso"]
   },
   {
-    icon: Target,
-    title: "Sector Turístico",
-    description: "Desarrollo sostenible del turismo como motor económico",
-    features: ["Promoción turística", "Capacitación hotelera", "Productos turísticos"]
+    icon: FileText,
+    title: "Reportes Especializados",
+    description: "Documentos analíticos para la toma de decisiones informadas",
+    features: ["Análisis sectorial", "Comparativas regionales", "Metodología transparente"]
   },
   {
-    icon: Network,
-    title: "Vinculación Académica",
-    description: "Conectamos empresas con instituciones educativas y de investigación",
-    features: ["Proyectos colaborativos", "Prácticas profesionales", "Investigación aplicada"]
+    icon: PieChart,
+    title: "Visualización de Datos",
+    description: "Gráficos interactivos y dashboards para interpretar la información",
+    features: ["Gráficos dinámicos", "Filtros personalizables", "Exportación de datos"]
+  },
+  {
+    icon: Users,
+    title: "Consultoría Estadística",
+    description: "Asesoría especializada en interpretación de datos económicos",
+    features: ["Análisis personalizado", "Capacitación en datos", "Soporte técnico"]
   }
 ];
 
@@ -56,11 +56,11 @@ const ServicesSection = () => {
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-6 text-4xl font-bold text-gray-900 md:text-5xl">
             Nuestros{" "}
-            <span className="text-primary">Servicios</span>
+            <span className="text-primary">Servicios de Datos</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Ofrecemos soluciones integrales para impulsar el desarrollo económico 
-            y social de Morelos
+            Proporcionamos herramientas y análisis cuantitativos para comprender 
+            el desarrollo económico de Morelos
           </p>
         </div>
 
@@ -92,7 +92,7 @@ const ServicesSection = () => {
                   ))}
                 </ul>
                 <button className="inline-flex items-center text-primary hover:text-primary/80 font-semibold transition-colors group-hover:translate-x-1">
-                  Conocer más
+                  Explorar datos
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </button>
               </CardContent>
@@ -104,10 +104,10 @@ const ServicesSection = () => {
         <div className="mt-16 text-center">
           <div className="inline-flex items-center justify-center rounded-2xl bg-gradient-warm px-8 py-4 text-white shadow-lg">
             <span className="mr-2 text-lg font-semibold">
-              ¿Necesitas asesoría personalizada?
+              ¿Necesitas datos específicos para tu análisis?
             </span>
             <button className="rounded-xl bg-white/20 px-4 py-2 text-sm font-medium hover:bg-white/30 transition-colors">
-              Contactar
+              Solicitar Datos
             </button>
           </div>
         </div>

@@ -10,35 +10,35 @@ import {
   Mail, 
   Clock, 
   Send,
-  Building2,
-  Users,
+  Database,
+  BarChart3,
   TrendingUp
 } from "lucide-react";
 
 const contactInfo = [
   {
     icon: MapPin,
-    title: "Dirección",
+    title: "Oficinas Centrales",
     content: "Av. Morelos Sur #123, Col. Centro, Cuernavaca, Morelos",
-    description: "Oficinas Centrales"
+    description: "Secretaría de Desarrollo Económico"
   },
   {
     icon: Phone,
-    title: "Teléfono",
+    title: "Soporte Técnico",
     content: "+52 777 123 4567",
-    description: "Línea Directa"
+    description: "Línea de datos y análisis"
   },
   {
     icon: Mail,
-    title: "Email",
-    content: "contacto@desarrollo.morelos.gob.mx",
-    description: "Atención General"
+    title: "Consultas de Datos",
+    content: "datos@desarrollo.morelos.gob.mx",
+    description: "Solicitudes de información"
   },
   {
     icon: Clock,
-    title: "Horarios",
+    title: "Horarios de Atención",
     content: "Lunes a Viernes: 8:00 AM - 6:00 PM",
-    description: "Atención al Público"
+    description: "Soporte para consultas técnicas"
   }
 ];
 
@@ -49,12 +49,12 @@ const ContactSection = () => {
         {/* Section Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-6 text-4xl font-bold md:text-5xl">
-            ¿Listo para{" "}
-            <span className="text-blue-200">transformar</span> tu futuro?
+            ¿Necesitas{" "}
+            <span className="text-blue-200">datos específicos</span> para tu análisis?
           </h2>
           <p className="text-xl text-blue-100">
-            Conecta con nosotros y descubre cómo podemos impulsar tu proyecto 
-            empresarial en Morelos
+            Conecta con nuestro equipo de análisis de datos y obtén la información 
+            cuantitativa que necesitas para tus proyectos
           </p>
         </div>
 
@@ -62,9 +62,9 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="border-0 bg-white/10 backdrop-blur-sm text-white shadow-xl">
             <CardHeader>
-              <CardTitle className="text-2xl text-white">Envíanos un Mensaje</CardTitle>
+              <CardTitle className="text-2xl text-white">Solicitar Datos</CardTitle>
               <CardDescription className="text-blue-100">
-                Completa el formulario y nos pondremos en contacto contigo en menos de 24 horas
+                Completa el formulario y te proporcionaremos la información que necesitas en menos de 24 horas
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -80,10 +80,10 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <label className="mb-2 block text-sm font-medium text-blue-100">
-                    Empresa
+                    Institución
                   </label>
                   <Input 
-                    placeholder="Nombre de tu empresa" 
+                    placeholder="Tu institución o empresa" 
                     className="border-white/20 bg-white/10 text-white placeholder:text-blue-200 focus:border-white/40"
                   />
                 </div>
@@ -113,25 +113,26 @@ const ContactSection = () => {
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-blue-100">
-                  Servicio de Interés
+                  Tipo de Datos Requeridos
                 </label>
                 <select className="w-full rounded-lg border border-white/20 bg-white/10 px-4 py-3 text-white focus:border-white/40 focus:outline-none">
-                  <option value="" className="text-gray-800">Selecciona un servicio</option>
-                  <option value="desarrollo-empresarial" className="text-gray-800">Desarrollo Empresarial</option>
-                  <option value="capacitacion" className="text-gray-800">Capacitación Laboral</option>
-                  <option value="inversion" className="text-gray-800">Inversión y Comercio</option>
-                  <option value="innovacion" className="text-gray-800">Innovación Tecnológica</option>
-                  <option value="turismo" className="text-gray-800">Sector Turístico</option>
-                  <option value="vinculacion" className="text-gray-800">Vinculación Académica</option>
+                  <option value="" className="text-gray-800">Selecciona el tipo de datos</option>
+                  <option value="macroeconomic" className="text-gray-800">Indicadores Macroeconómicos</option>
+                  <option value="sectorial" className="text-gray-800">Datos Sectoriales</option>
+                  <option value="demographic" className="text-gray-800">Indicadores Demográficos</option>
+                  <option value="time-series" className="text-gray-800">Series Temporales</option>
+                  <option value="comparative" className="text-gray-800">Análisis Comparativo</option>
+                  <option value="projections" className="text-gray-800">Proyecciones Económicas</option>
+                  <option value="custom" className="text-gray-800">Datos Personalizados</option>
                 </select>
               </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-blue-100">
-                  Mensaje
+                  Descripción de la Solicitud
                 </label>
                 <Textarea 
-                  placeholder="Cuéntanos sobre tu proyecto y cómo podemos ayudarte..." 
+                  placeholder="Describe específicamente qué datos necesitas, el período de tiempo, y el propósito de tu análisis..." 
                   rows={4}
                   className="border-white/20 bg-white/10 text-white placeholder:text-blue-200 focus:border-white/40"
                 />
@@ -141,7 +142,7 @@ const ContactSection = () => {
                 className="w-full bg-gradient-warm text-white hover:bg-gradient-warm/90 py-3 text-lg font-semibold shadow-lg"
               >
                 <Send className="mr-2 h-5 w-5" />
-                Enviar Mensaje
+                Solicitar Datos
               </Button>
             </CardContent>
           </Card>
@@ -177,20 +178,20 @@ const ContactSection = () => {
             <Card className="border-0 bg-white/10 backdrop-blur-sm text-white shadow-lg">
               <CardContent className="p-6">
                 <h3 className="mb-4 text-xl font-semibold text-white">
-                  ¿Por qué elegirnos?
+                  ¿Por qué elegir nuestros datos?
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
-                    <Building2 className="h-5 w-5 text-blue-200" />
-                    <span className="text-blue-100">Más de 15 años de experiencia</span>
+                    <Database className="h-5 w-5 text-blue-200" />
+                    <span className="text-blue-100">Datos oficiales del INEGI y fuentes gubernamentales</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <Users className="h-5 w-5 text-blue-200" />
-                    <span className="text-blue-100">Equipo de expertos certificados</span>
+                    <BarChart3 className="h-5 w-5 text-blue-200" />
+                    <span className="text-blue-100">Metodología transparente y verificable</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <TrendingUp className="h-5 w-5 text-blue-200" />
-                    <span className="text-blue-100">Resultados comprobados</span>
+                    <span className="text-blue-100">Actualización continua y monitoreo en tiempo real</span>
                   </div>
                 </div>
               </CardContent>
@@ -198,7 +199,7 @@ const ContactSection = () => {
 
             {/* Social Media */}
             <div className="text-center">
-              <p className="mb-4 text-blue-100">Síguenos en redes sociales</p>
+              <p className="mb-4 text-blue-100">Síguenos para actualizaciones de datos</p>
               <div className="flex justify-center gap-4">
                 <button className="flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white hover:bg-white/30 transition-colors">
                   <span className="text-lg font-bold">f</span>
