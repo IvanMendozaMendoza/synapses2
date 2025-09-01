@@ -43,7 +43,7 @@ const NavBar = () => {
                   className="text-gray-600 hover:text-blue-700 px-3 py-2 text-sm font-medium transition-all duration-200 relative group"
                 >
                   {item.label}
-                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-200 group-hover:w-full"></span>
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600/20 transition-all duration-200 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
@@ -89,7 +89,7 @@ const NavBar = () => {
                 </a>
               ))}
               <div className="pt-4">
-                <Button className="w-full bg-gradient-hero text-white">
+                <Button className="bg-gradient-hero w-full text-white">
                   Registrarse
                 </Button>
               </div>

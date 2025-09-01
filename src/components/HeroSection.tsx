@@ -15,7 +15,7 @@ const HeroSection = () => {
           }}
         ></div>
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-black/25"></div>
       </div>
 
       {/* Background Pattern */}
@@ -40,16 +40,15 @@ const HeroSection = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="mb-8 text-xl text-blue-100 md:text-2xl">
-            Conectamos empresas, fortalecemos emprendedores y construimos un futuro
-            próspero para nuestro estado
+          <p className="mb-8 text-lg text-blue-100 md:text-xl">
+            Proporcionamos métricas cuantitativas y análisis de datos para impulsar decisiones informadas y el desarrollo económico sostenible de Morelos
           </p>
 
           {/* CTA Buttons */}
           <div className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Button
               size="lg"
-              className="bg-white text-primary hover:bg-blue-50 px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+              className="bg-blue-500/50 backdrop-blur-sm text-primary hover:bg-blue-500/60 px-8 py-4 text-lg font-semibold shadow-lg transition-all duration-300 hover:scale-102 border border-white/20"
             >
               Explorar Oportunidades
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -57,7 +56,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
+              className="border-white text-white hover:bg-black/20 hover:text-primary px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-102"
             >
               <Play className="mr-2 h-5 w-5" />
               Ver Video Institucional
