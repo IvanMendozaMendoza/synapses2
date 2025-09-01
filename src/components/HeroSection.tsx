@@ -66,16 +66,16 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-blue-200">500+</div>
-              <div className="text-sm text-blue-100">Empresas Apoyadas</div>
+              <div className="mb-2 text-3xl font-bold text-blue-200">50+</div>
+              <div className="text-sm text-blue-100">Indicadores Económicos</div>
             </div>
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-blue-200">2,500+</div>
-              <div className="text-sm text-blue-100">Empleos Generados</div>
+              <div className="mb-2 text-3xl font-bold text-blue-200">95%</div>
+              <div className="text-sm text-blue-100">Cobertura de Datos</div>
             </div>
             <div className="text-center">
-              <div className="mb-2 text-3xl font-bold text-blue-200">15%</div>
-              <div className="text-sm text-blue-100">Crecimiento Anual</div>
+              <div className="mb-2 text-3xl font-bold text-blue-200">24/7</div>
+              <div className="text-sm text-blue-100">Monitoreo en Tiempo Real</div>
             </div>
           </div>
         </div>
